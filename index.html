@@ -22,6 +22,25 @@
       content="width=device-width"
       style="font-family: Helvetica, Arial, sans-serif"
     />
+
+    <style>
+      .table {
+        max-width: 600px;
+        min-width: 600px;
+      }
+
+      .container{
+        padding: 0 10px;
+      }
+
+      @media (max-width: 650px) {
+        .table {
+          max-width: 100%;
+          min-width: 100%;
+
+        }
+      }
+    </style>
   </head>
   <body
     style="
@@ -39,23 +58,22 @@
       font-weight: 400;
       line-height: 1.43;
       margin: 0;
-      min-width: 600px;
       padding: 0;
       /* text-align: left; */
       width: 100% !important;
     "
   >
+  <div class="container">
     <table
+      class="table"
       align="center"
-      width="600"
       cellpadding="0"
       cellspacing="0"
       style="
         border-collapse: collapse;
         border-spacing: 0;
         font-family: Helvetica, Arial, sans-serif;
-        max-width: 600px;
-        min-width: 600px;
+
         padding: 0;
         /* text-align: left; */
         vertical-align: top;
@@ -187,7 +205,7 @@
                     text-align: center;
                   "
                 >
-                 مرحبا اسم العميل
+                  مرحبا اسم العميل
                 </div>
                 <div
                   style="
@@ -329,5 +347,6 @@
         </td>
       </tr>
     </table>
+  </div>
   </body>
 </html>
